@@ -1,0 +1,29 @@
+{
+    "name": "homebridge-rain-sensor",
+    "version": "1.0.0",
+    "description": "Homebridge plugin for a simple rain sensor",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lucavb/homebridge-rain-sensor.git"
+    },
+    "keywords": [
+        "homebridge-plugin"
+    ],
+    "author": "Luca Becker",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lucavb/homebridge-rain-sensor/issues"
+    },
+    "homepage": "https://github.com/lucavb/homebridge-rain-sensor#readme",
+    "engines" : {
+        "node": ">=0.12.0",
+        "homebridge": ">=0.2.0"
+    },
+    "dependencies" : {
+        "onoff" : "1.1.0"
+    }
+}

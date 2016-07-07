@@ -85,10 +85,11 @@ function HomebridgeRainSensor(log, config) {
 
     this.rainSensor = new RainSensor(this.name);
     this.rainSensor.getCharacteristic(RainCharacteristic)
-        .on('get', this.getMoisture.bind(this));
+        .on('get', this.getRain.bind(this));
 }
 
-HomebridgeRainSensor.prototype.getMoisture = function(callback) {
+HomebridgeRainSensor.prototype.getRain = function(callback) {
+    var that = this;
     that.pinVCC.writeSync(1);
     setTimeout(function() {
         // giving the sensors some time to get started
